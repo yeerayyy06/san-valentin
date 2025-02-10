@@ -1,0 +1,50 @@
+<html lang="ca"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionari</title>
+    <style>
+        body {
+            background-color: #ffffcc;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Questionari</h1>
+    <h2>Envia aquí els teus comentaris</h2>
+    <form action="/enviar" method="post">
+        <label for="nom">Nom: </label>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="email">Correu electrònic:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="categoria">Categoria del comentari:</label>
+        <select id="categoria" name="categoria">
+            <option value="suggeriment">Suggeriment</option>
+            <option value="queixa">Queixa</option>
+            <option value="elogi">Elogi</option>
+        </select><br><br>
+
+        <label for="missatge">Comentari:</label><br>
+        <textarea id="missatge" name="missatge" rows="4" cols="50" placeholder="Proporciona la informació del teu comentari..."></textarea><br><br>
+
+        <label for="qualificacio">Qualificació:</label><br>
+        <input type="radio" id="qualificacio1" name="qualificacio" value="1">
+        <label for="qualificacio1">1</label>
+        <input type="radio" id="qualificacio2" name="qualificacio" value="2">
+        <label for="qualificacio2">2</label>
+        <input type="radio" id="qualificacio3" name="qualificacio" value="3">
+        <label for="qualificacio3">3</label>
+        <input type="radio" id="qualificacio4" name="qualificacio" value="4">
+        <label for="qualificacio4">4</label>
+        <input type="radio" id="qualificacio5" name="qualificacio" value="5">
+        <label for="qualificacio5">5</label><br><br>
+
+        <button type="submit">Enviar comentari</button>
+        <p style="color: rgb(255, 0, 0); font-size: 16px;">Camps requerits *</p>
+    </form>
+</body>
+</html>
